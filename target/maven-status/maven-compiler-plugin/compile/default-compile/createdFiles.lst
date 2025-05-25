@@ -1,0 +1,5 @@
+com\perfulandia_spa\cl\perfulandia_spa\service\UsuarioService.class
+com\perfulandia_spa\cl\perfulandia_spa\controller\UsuarioController.class
+com\perfulandia_spa\cl\perfulandia_spa\model\Usuario.class
+com\perfulandia_spa\cl\perfulandia_spa\repository\UsuarioRepository.class
+com\perfulandia_spa\cl\perfulandia_spa\PerfulandiaSpaApplication.class
