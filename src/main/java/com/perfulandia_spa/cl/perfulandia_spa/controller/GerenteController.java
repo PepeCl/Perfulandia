@@ -25,19 +25,19 @@ public class GerenteController {
 
     @GetMapping
     public ResponseEntity<List<Gerente>> listar(){
-        List<Gerente> usuarios = gerenteService.findAll();
-        if (usuarios.isEmpty()) {
+        List<Gerente> gerente = gerenteService.findAll();
+        if (gerente.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         } else {
-            return new ResponseEntity<>(usuarios, HttpStatus.OK);
+            return new ResponseEntity<>(gerente, HttpStatus.OK);
         }
     }
 
 
     @PostMapping
     public ResponseEntity<Gerente> guardar(@RequestBody Gerente gerente){
-        Gerente usuarioNuevo = gerenteService.save(gerente);
-        return  ResponseEntity.status(HttpStatus.CREATED).body(usuarioNuevo);
+        Gerente gerenteNuevo = gerenteService.save(gerente);
+        return  ResponseEntity.status(HttpStatus.CREATED).body(gerenteNuevo);
     }
 
     @GetMapping("/{id}")
@@ -55,14 +55,13 @@ public class GerenteController {
         try {
             Gerente geren = gerenteService.findById(id.longValue());
             geren.setId(id.longValue());
-            geren.setRut(gerente.getRut());
-            geren.setPrimerNombre(gerente.getPrimerNombre());
-            geren.setSegundoNombre(gerente.getSegundoNombre());
-            geren.setApellidoPaterno(gerente.getApellidoPaterno());
-            geren.setApellidoMaterno(gerente.getApellidoMaterno());
-            geren.setEmail(gerente.getEmail());
-            geren.setRol(gerente.getRol());
-
+            geren.setNombreProducto(gerente.getNombreProducto());
+            geren.setCategoria(gerente.getCategoria());
+            geren.setStockMinimo(gerente.getStockMinimo());
+            geren.setStockActual(gerente.getStockActual());
+            geren.setProveedor(gerente.getProveedor());
+            geren.setPrecioUnitario(gerente.getPrecioUnitario());
+            geren.setPrecioVenta(gerente.getPrecioVenta());
             gerenteService.save(geren);
             return ResponseEntity.ok(geren);
         } catch(Exception e) {

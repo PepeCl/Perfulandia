@@ -1,15 +1,12 @@
 package com.perfulandia_spa.cl.perfulandia_spa.model;
 
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Date;
-
 @Entity
-@Table(name = "usuario")
+@Table(name = "productos")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,27 +16,25 @@ public class Gerente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "rut", nullable = false, unique = true, length = 12)
-    private String rut;
+    @Column(name = "nombre_producto", nullable = false)
+    private String nombreProducto;
 
-    @Column(name = "primer_nombre", nullable = false)
-    private String primerNombre;
+    @Column(name = "categoria", nullable = false)
+    private String categoria;
 
-    @Column(name = "segundo_nombre", nullable = false)
-    private String segundoNombre;
+    @Column(name = "stock_minimo", nullable = false)
+    private int stockMinimo;
 
-    @Column(name = "apellido_paterno", nullable = false)
-    private String apellidoPaterno;
+    @Column(name = "stock_actual", nullable = false)
+    private int stockActual;
 
-    @Column(name = "apellido_materno", nullable = false)
-    private String apellidoMaterno;
+    @Column(name = "proveedor", nullable = false)
+    private String proveedor;
 
-    @Column(name = "email", nullable = false)
-    private String email;
+    @Column(name = "precio_unitario", nullable = false)
+    private int precioUnitario;
 
-    @Column(name = "rol", nullable = false)
-    private String rol;
+    @Column(name = "precio_venta", nullable = false)
+    private int precioVenta;
 
-    @Column(name = "inicio_contrato", nullable = false)
-    private Date inicioContrato;
 }

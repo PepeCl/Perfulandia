@@ -8,19 +8,21 @@ import java.util.List;
 
 @Repository
 public interface GerenteRepository extends JpaRepository<Gerente, Long> {
+    List<Gerente> findAll();
 
-    List<Gerente> findByIdGerente(String id_gerente);
+    List<Gerente> findByNombreProducto(String nombreProducto);
 
-    List<Gerente> findByRut_Gerente(String rut);
+    List<Gerente> findByCategoria(String categoria);
 
-    List<Gerente> findByPrimerNombre(String primerNombre);
+    List<Gerente> findByStockMinimo(int stockMinimo);
 
-    List<Gerente> findBySegundoNombre(String segundoNombre);
+    List<Gerente> findByStockActual(int stockActual);
 
-    List<Gerente> findByApellidoPaterno(String apellidoPaterno);
+    List<Gerente> findByProveedor(String proveedor);
 
-    List<Gerente> findByApellidoMaterno(String apellidoMaterno);
+    List<Gerente> findByPrecioUnitario(int precioUnitario);
 
-    List<Gerente> findByEmail(String email);    
+    List<Gerente> findByPrecioVenta(int precioVenta);
+
 }
 
