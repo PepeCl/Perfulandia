@@ -1,9 +1,13 @@
 C:\Users\Giuseppe Saavedra\Desktop\Perfulandia Final\Perfulandia\src\main\java\com\perfulandia_spa\cl\perfulandia_spa\controller\GerenteController.java
 C:\Users\Giuseppe Saavedra\Desktop\Perfulandia Final\Perfulandia\src\main\java\com\perfulandia_spa\cl\perfulandia_spa\controller\UsuarioController.java
+C:\Users\Giuseppe Saavedra\Desktop\Perfulandia Final\Perfulandia\src\main\java\com\perfulandia_spa\cl\perfulandia_spa\controller\VendedorController.java
 C:\Users\Giuseppe Saavedra\Desktop\Perfulandia Final\Perfulandia\src\main\java\com\perfulandia_spa\cl\perfulandia_spa\model\Gerente.java
 C:\Users\Giuseppe Saavedra\Desktop\Perfulandia Final\Perfulandia\src\main\java\com\perfulandia_spa\cl\perfulandia_spa\model\Usuario.java
+C:\Users\Giuseppe Saavedra\Desktop\Perfulandia Final\Perfulandia\src\main\java\com\perfulandia_spa\cl\perfulandia_spa\model\Vendedor.java
 C:\Users\Giuseppe Saavedra\Desktop\Perfulandia Final\Perfulandia\src\main\java\com\perfulandia_spa\cl\perfulandia_spa\PerfulandiaSpaApplication.java
 C:\Users\Giuseppe Saavedra\Desktop\Perfulandia Final\Perfulandia\src\main\java\com\perfulandia_spa\cl\perfulandia_spa\repository\GerenteRepository.java
 C:\Users\Giuseppe Saavedra\Desktop\Perfulandia Final\Perfulandia\src\main\java\com\perfulandia_spa\cl\perfulandia_spa\repository\UsuarioRepository.java
+C:\Users\Giuseppe Saavedra\Desktop\Perfulandia Final\Perfulandia\src\main\java\com\perfulandia_spa\cl\perfulandia_spa\repository\VendedorRepository.java
 C:\Users\Giuseppe Saavedra\Desktop\Perfulandia Final\Perfulandia\src\main\java\com\perfulandia_spa\cl\perfulandia_spa\service\GerenteService.java
 C:\Users\Giuseppe Saavedra\Desktop\Perfulandia Final\Perfulandia\src\main\java\com\perfulandia_spa\cl\perfulandia_spa\service\UsuarioService.java
+C:\Users\Giuseppe Saavedra\Desktop\Perfulandia Final\Perfulandia\src\main\java\com\perfulandia_spa\cl\perfulandia_spa\service\VendedorService.java
